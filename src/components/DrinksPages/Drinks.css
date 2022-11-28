@@ -1,0 +1,218 @@
+h1 {
+    text-align: center;
+    color: #575757;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    color: black;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-size: xx-large;
+}
+
+h3 {
+    color: #b39177;
+    margin-top: 0;
+    font-size: x-large;
+}
+
+/* DrinksHomePage */
+
+.form-page {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.page {
+    margin: 20px auto;
+}
+
+.inputbox {
+    position: relative;
+    width: 80%;
+}
+
+.inputbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b39177;
+    border-radius: 5px;
+    outline: none;
+    color: #575757;
+    font-size: 1em;
+    transition: 0.5s;
+}
+
+.inputbox span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #b39177;
+    text-transform: uppercase;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span {
+    color: #b39177;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color: #fff;
+    border-left: 1px solid #b39177;
+    border-right: 1px solid #b39177;
+    letter-spacing: 0.2em;
+}
+
+/* DrinksDisplay */
+
+.drinks-list {
+    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* DrinksItems */
+
+.card {
+    box-shadow: none;
+    max-width: 260px;
+    min-height: 400px;
+    height: auto;
+    text-align: center;
+    margin: 20px;
+    border: none;
+}
+
+.c_pix {
+    max-width: 100%;
+}
+
+.c_name {
+    color: black;
+    font-size: large;
+    margin-bottom: 0;
+}
+
+.c_category {
+    color: #b39177;
+    font-size: medium;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.popup-btn {
+    color: #b39177;
+    background-color:white;
+    font-size: medium;
+    padding: 5% 15%;
+    border-color: #b39177;
+    border-style: solid;
+    transition: all 0.15s ease-in-out;
+}
+
+.popup-btn:hover {
+    background-color: #b39177;
+    color: white;
+}
+
+.ingredients{
+    color: #b39177;
+    font-size: large;
+    margin-bottom: 0;
+    margin-top: 30px;
+}
+
+.instructions {
+    color: #b39177;
+    font-size: large;
+}
+
+.list-ingredients {
+    padding-left: 20px;
+}
+
+/* DrinksNotFound */
+
+.error {
+    padding: 20px 20px 100px 20px;
+}
+
+.msg-error {
+    color: #b39177;
+    font-size: large;
+    font-weight: bold;
+    border-bottom: solid 2px;
+    border-color: #ededed;
+}
+
+/* DrinksPopUp */
+
+.popup-card {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap
+}
+
+.popup-img {
+    padding: 20px;
+    width: 40%;
+    height: 50%;
+}
+
+.popup-info {
+    padding-left: 10px;
+    text-align: left;
+    width: 60%;
+    height: 50%;
+    margin: 0;
+}
+
+.popup-instructions {
+    text-align: justify;
+    padding: 20px;
+    height: 50%;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-inner {
+    position: relative;
+    padding: 32px;
+    width: 50%;
+    min-width: 640px;
+    max-width: 640px;
+    height: 80%;
+    background-color: white;
+}
+
+.popup-inner .close-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.close-btn {
+    background-color: white;
+    border: none;
+}
+
+.fa-xmark {
+    color: #b39177;
+    font-size: xx-large;
+}

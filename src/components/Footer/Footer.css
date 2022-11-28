@@ -1,0 +1,18 @@
+.contact {
+    background-color: #ededed;
+    font-size: 16px;
+    padding: 10px;
+    letter-spacing: 1.4px;
+    font-weight: 900;
+    color: #b39177;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright {
+    padding: 20px;
+    text-align: center;
+    color: #adadad;
+    font-size: small;
+}
